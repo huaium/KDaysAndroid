@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:key="uc_center"
+        android:title="@string/uc_center">
+
+        <Preference
+            android:key="change_password"
+            android:title="@string/change_password" />
+
+        <Preference
+            android:key="change_avatar"
+            android:title="@string/change_avatar" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="general"
+        android:title="@string/general">
+
+        <SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:key="use_browser"
+            android:summary="@string/use_browser_summary"
+            android:title="@string/use_browser_title" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="theme"
+        android:title="@string/theme">
+
+        <ListPreference
+            app:defaultValue="auto"
+            app:dialogTitle="@string/theme_selector"
+            app:entries="@array/theme_entries"
+            app:entryValues="@array/theme_values"
+            app:key="theme_selector"
+            app:summary="%s"
+            app:title="@string/theme_selector" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="developer"
+        android:title="@string/developer"
+        app:isPreferenceVisible="false">
+
+        <SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:key="enable_developer"
+            android:title="@string/enable_developer" />
+
+        <SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:key="method_tracing"
+            android:summary="@string/developer_summary"
+            android:title="@string/developer_title" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

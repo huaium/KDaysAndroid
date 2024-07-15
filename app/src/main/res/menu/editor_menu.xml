@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_drafts"
+        android:title="@string/drafts" />
+
+    <item
+        android:id="@+id/menu_bbcode_show"
+        android:title="@string/bbcode_show" />
+
+    <item
+        android:id="@+id/menu_bbcode_help"
+        android:title="@string/bbcode_help" />
+
+</menu>
